@@ -20,7 +20,7 @@ const steps = [
     number: 2,
     title: "Match",
     description:
-      "Our Sales agents use the Velocity Layer to match the right property with the right investor.",
+      "Our Sales agents use Smart Sales Tools to match the right property with the right investor.",
     details: [
       "Precision lead matching",
       "Automated follow-ups",

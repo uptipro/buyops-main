@@ -3,7 +3,9 @@
 This document collects all user-facing copy currently hard-coded in the UI components.
 
 ## What’s included on the homepage
+
 The homepage renders these sections (in this order):
+
 1. Navigation (header)
 2. Hero
 3. Persona Switcher
@@ -14,134 +16,129 @@ The homepage renders these sections (in this order):
 8. CTA Footer (includes Waitlist form)
 
 ## Navigation (Header)
+
 **Nav items**
+
 - Ecosystem → `#ecosystem`
 - Inventory → `#inventory`
 - The Trail → `#trail`
 - FAQ → `#faq`
 
 **Header CTA**
+
 - Button: “Join Waitlist” → `#waitlist`
 
 ## Hero Section
+
 **Headline**
+
 - Line 1: “Real Estate Wealth,”
 - Line 2: “Unlocked.”
 
 **Subheadline**
-- “Nigeria's premier ecosystem connecting asset owners, agents, and investors.”
 
 **Primary CTA**
-- Button/link: “Join the Waitlist” → `#waitlist`
+“Empower your sales pipeline with zero-friction lead management. Close deals without cash handling and earn commissions instantly through our Smart Sales Tools.”
 
 **Scroll indicator**
-- “Scroll to explore”
 
-**3D map marker labels (shown on the grid)**
-- “✓ Verified Assets”
-- “From ₦850K”
 - “18% Avg ROI”
 - “500+ Properties”
-- “10K+ Investors”
-
-## Persona Switcher Section (id: ecosystem)
-**Tabs**
+  **Tabs**
 - “Asset Owners”
-- “Sales Agents”
 - “Investors”
 
-### Asset Owners persona
 **Headline**
+
 - “Monetize your Land & Property.”
 
-**Description**
 - “Transform your real estate assets into income-generating fractions. BuyOps Admin gives you total control over asset lifecycle, investor management, and revenue distribution.”
 
-**Features**
 - “Multi-step Asset Wizard (Land, Off-plan, Under Construction)”
 - “Automated Fraction Distribution System”
 - “Real-time Revenue Analytics”
 - “Investor Relations Dashboard”
+  - A: “BuyOps Admin is the governance layer for enterprise management. BuyOps Sales is Smart Sales Tools for agents to manage leads and close deals. BuyOps Investor is the liquidity layer where you can browse properties, buy fractions, and track your portfolio.”
 - “Legal Documentation Management”
 
-**Stats**
-- Total Assets Listed: “156”
 - Average ROI Delivered: “18%”
 - Revenue Generated: “₦847M”
 
 **CTA**
+
 - Button: “List Your Property”
 
-**Stats placeholder visual**
 - “📊 Growth Chart”
 
-### Sales Agents persona
 **Headline**
+
 - “Sell Faster, Earn Sooner.”
 
-**Description**
-- “Empower your sales pipeline with zero-friction lead management. Close deals without cash handling and earn commissions instantly through our velocity layer.”
-
 **Features**
+
 - “4-Tab Lead Pipeline (Personal, Assigned, Freelancer, Archive)”
-- “Instant Commission Calculator (Lead Finder vs. Deal Closer)”
 - “One-Click Payment Link Generation”
 - “Real-time Lead Status Tracking”
 - “Automated Follow-up System”
 
 **Stats**
-- Active Leads: “127”
-- Deals Closed This Month: “43”
-- Commission Earned: “₦12.4M”
 
-**CTA**
+- Subtitle: “Smart Sales Tools.”
+  **CTA**
 - Button: “Start Selling”
 
-**Stats placeholder visual**
 - “📱 Mobile Dashboard”
 
 ### Investors persona
+
 **Headline**
+
 - “Buy the Future, One Piece at a Time.”
 
-**Description**
-- “Access premium real estate fractions with complete transparency. Track your portfolio in real-time and access 7-section asset intelligence from anywhere.”
-
 **Features**
+
 - “Fractional Ownership Model (Not Percentages)”
-- “7-Section Deep-Dive Asset Intelligence”
 - “Real-time Portfolio Valuation”
 - “Automated Digital Certificates (PR-HRL-####)”
 - “Dividend Tracking & Payouts”
 
 **Stats**
+
 - Properties Available: “500+”
 - Average Entry Point: “₦850K”
 - Total Investors: “10,000+”
 
 **CTA**
+
 - Button: “Browse Properties”
 
 **Stats placeholder visual**
+
 - “🗺️ Property Map”
 
 ## Fractional Gallery (id: inventory)
+
 **Section title**
+
 - “Active Inventory”
 
 **Section subtitle**
+
 - “Premium real estate opportunities, one fraction at a time”
 
 **Property card static label**
+
 - “Property Image”
 
 **Property card hover labels**
+
 - “Expected ROI”
 - “Risk Level”
 - “Available”
 - Button: “View Details”
 
 **Property data (currently hard-coded)**
+
 1. The Grandeur Suites
    - Location: “Lekki Phase 1”
    - Price: “₦5,000,000” (per fraction)
@@ -166,17 +163,22 @@ The homepage renders these sections (in this order):
    - Fractions: 3/10 available
 
 **Below-marquee text + CTA**
+
 - “Hover over any property to reveal detailed insights”
 - Button: “Explore All Properties”
 
 ## Digital Trail (id: trail)
+
 **Section title**
+
 - “The Digital Trail”
 
 **Section subtitle**
+
 - “Every transaction, fully transparent and secure from start to finish”
 
 ### Step 1
+
 - Title: “Deploy”
 - Description: “Admin creates a secure asset entry with verified legal documentation and financial structures.”
 - Details:
@@ -186,6 +188,7 @@ The homepage renders these sections (in this order):
   - “Fractional structure defined”
 
 ### Step 2
+
 - Title: “Engage”
 - Description: “Sales agents manage leads through a 4-tab system, ensuring no lead falls through the cracks.”
 - Details:
@@ -195,6 +198,7 @@ The homepage renders these sections (in this order):
   - “Real-time pipeline visibility”
 
 ### Step 3
+
 - Title: “Transact”
 - Description: “The "Ready to Buy" workflow triggers a secure gateway handoff. No agent ever touches cash.”
 - Details:
@@ -204,6 +208,7 @@ The homepage renders these sections (in this order):
   - “Instant confirmation”
 
 ### Step 4
+
 - Title: “Verify”
 - Description: “Upon payment, the system auto-generates a unique Registration Code (PR-HRL-####) and issues the Digital Deed.”
 - Details:
@@ -213,27 +218,35 @@ The homepage renders these sections (in this order):
   - “Digital certificate issued”
 
 **Sample Registration Code panel**
+
 - Label: “Sample Registration Code”
 - Code: “PR-HRL-2026”
 
 ## Trust Section
+
 **Section title**
+
 - “Engineered for Trust.”
 
 **Feature cards**
+
 - Native Currency — “Everything is priced and settled in Nigerian Naira (₦).”
 - Zero-Cash Policy — “100% digital payment trails for maximum security and transparency.”
 - Role-Based Access — “Distinct dashboards for Team Leads, Agents, and Admins.”
 - Data-Driven — “7-section asset analysis covering ROI, Risk, and Legal status.”
 
 ## FAQ (id: faq)
+
 **Section title**
+
 - “Frequently Asked Questions”
 
 **Section subtitle**
+
 - “Everything you need to know about fractional real estate investment”
 
 **FAQ items**
+
 1. Q: “What is fractional real estate ownership?”
    - A: “Fractional ownership means you can buy a portion (fraction) of a property instead of the whole thing. Each fraction represents actual ownership, not just shares or percentages. You receive a unique registration code (PR-HRL-####) and a digital certificate proving your ownership.”
 2. Q: “How does the payment process work?”
@@ -248,17 +261,22 @@ The homepage renders these sections (in this order):
    - A: “We believe in transparency. All fees are clearly displayed before purchase, including platform fees, transaction fees, and any property management costs. There are no hidden charges. Everything is priced and settled in Nigerian Naira (₦).”
 
 **FAQ footer CTA**
+
 - “Still have questions?”
 - Button: “Contact Support”
 
 ## CTA Footer / Waitlist (id: waitlist)
+
 **Main CTA title**
+
 - “Ready to build your fractional portfolio?”
 
 **Main CTA subtitle**
+
 - “Join the 1,000+ agents and investors already scaling on the BuyOps infrastructure.”
 
 ### Waitlist form fields
+
 - Name placeholder: “Your Name”
 - Email placeholder: “Your Email”
 - Persona select:
@@ -266,18 +284,22 @@ The homepage renders these sections (in this order):
   - Options: “Asset Owner”, “Sales Agent”, “Investor”
 
 **Waitlist form submit button**
+
 - Default: “Join the Waitlist”
 - Submitted state: “You're on the list!”
 - Submitted helper text: “Check your email for confirmation”
 
 ### Stats grid
+
 - “₦2.5B+” — “Total Assets Under Management”
 - “10,000+” — “Active Investors”
 - “500+” — “Properties Listed”
 - “18%” — “Average ROI”
 
 ### Footer links
+
 **Product**
+
 - BuyOps Admin
 - BuyOps Sales
 - BuyOps Investor
@@ -285,6 +307,7 @@ The homepage renders these sections (in this order):
 - Pricing
 
 **Company**
+
 - About Us
 - Careers
 - Blog
@@ -292,6 +315,7 @@ The homepage renders these sections (in this order):
 - Contact
 
 **Resources**
+
 - Documentation
 - API Reference
 - Tutorials
@@ -299,6 +323,7 @@ The homepage renders these sections (in this order):
 - FAQs
 
 **Legal**
+
 - Privacy Policy
 - Terms of Service
 - Cookie Policy
@@ -306,9 +331,11 @@ The homepage renders these sections (in this order):
 - Security
 
 ### Bottom bar
+
 - “© 2026 BuyOps. Built for Nigeria's smartest investors.”
 
 **Social labels**
+
 - Twitter
 - LinkedIn
 - Instagram
@@ -317,16 +344,21 @@ The homepage renders these sections (in this order):
 ---
 
 ## Additional section component (not currently on the homepage)
+
 ### Trinity Section
+
 This section exists in the codebase but is not currently rendered on the homepage.
 
 **Section title**
+
 - “Three Powerful Apps, One Ecosystem”
 
 **Section subtitle**
+
 - “Everything you need to succeed in real estate investment”
 
 #### App: BuyOps Admin
+
 - Subtitle: “The Governance Layer.”
 - Description: “Total oversight for the enterprise. Manage the entire asset lifecycle, oversee company clusters, and track global revenue from a single indigo-tinted command center.”
 - Features:
@@ -339,6 +371,7 @@ This section exists in the codebase but is not currently rendered on the homepag
   - Pending Review: “7” (-5%)
 
 #### App: BuyOps Sales
+
 - Subtitle: “The Velocity Layer.”
 - Description: “Empowering agents to close without the friction. A high-performance dashboard designed to move leads from "Contacted" to "Ready to Buy" with zero cash handling.”
 - Features:
@@ -351,6 +384,7 @@ This section exists in the codebase but is not currently rendered on the homepag
   - Ibrahim Sule — Ready to Buy — ₦7,500,000 (Button: “Send Link”)
 
 #### App: BuyOps Investor
+
 - Subtitle: “The Liquidity Layer.”
 - Description: “Real estate investment, stripped of its barriers. Investors buy fractions, track portfolios in real-time, and access deep-dive risk assessments from a mobile-first interface.”
 - Features:

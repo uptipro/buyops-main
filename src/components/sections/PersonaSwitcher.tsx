@@ -146,7 +146,6 @@ export default function PersonaSwitcher() {
                   {currentPersona.description}
                 </p>
               </div>
-
               {/* Features */}
               <div className="space-y-3">
                 {currentPersona.features.map((feature, i) => (
@@ -180,7 +179,6 @@ export default function PersonaSwitcher() {
                   </motion.div>
                 ))}
               </div>
-
               {/* CTA */}
               <motion.a
                 whileHover={{ scale: 1.02 }}
@@ -194,19 +192,21 @@ export default function PersonaSwitcher() {
                       }
                     : undefined
                 }
-                href={activeTab !== "owners" ? currentPersona.ctaUrl : undefined}
+                href={
+                  activeTab !== "owners" ? currentPersona.ctaUrl : undefined
+                }
                 target={activeTab !== "owners" ? "_blank" : undefined}
                 rel={activeTab !== "owners" ? "noopener noreferrer" : undefined}
               >
                 {currentPersona.cta}
               </motion.a>
-            import ContactAdminModal from "../ContactAdminModal";
-
-            // ...existing code...
-
-              const [showContactModal, setShowContactModal] = useState(false);
-
-              <ContactAdminModal open={showContactModal} onClose={() => setShowContactModal(false)} />
+              import ContactAdminModal from "../ContactAdminModal"; //
+              ...existing code... const [showContactModal, setShowContactModal]
+              = useState(false);
+              <ContactAdminModal
+                open={showContactModal}
+                onClose={() => setShowContactModal(false)}
+              />
             </div>
 
             {/* Right: Stats Visual */}
