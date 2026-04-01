@@ -1,6 +1,6 @@
 "use client";
 
-import { FeedbackWidget } from "widget";
+import { FeedbackWidget } from "./FeedbackWidget";
 
 const appId = process.env.NEXT_PUBLIC_THUEBRIDGE_APP_ID;
 const apiKey = process.env.NEXT_PUBLIC_THUEBRIDGE_API_KEY;
