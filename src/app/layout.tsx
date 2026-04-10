@@ -65,7 +65,7 @@ export default function RootLayout({
         <SmoothScrollProvider>
           <Navigation />
           {children}
-          <FeedbackWidgetWrapper />
+          {/* <FeedbackWidgetWrapper /> */}
         </SmoothScrollProvider>
       </body>
     </html>
