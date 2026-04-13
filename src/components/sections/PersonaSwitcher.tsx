@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 import ContactAdminModal from "../ContactAdminModal";
 
 type Persona = "owners" | "agents" | "investors";
@@ -232,13 +233,28 @@ export default function PersonaSwitcher() {
                 ))}
               </div>
 
-              {/* Animation placeholder */}
-              <div className="mt-6 sm:mt-8 p-5 sm:p-6 bg-gray-50 rounded-lg">
-                <div className="h-24 sm:h-32 flex items-center justify-center text-brand-gray font-secondary">
-                  {activeTab === "owners" && "📊 Growth Chart"}
-                  {activeTab === "agents" && "📱 Mobile Dashboard"}
-                  {activeTab === "investors" && "🗺️ Property Map"}
-                </div>
+              {/* Persona illustration */}
+              <div className="mt-6 sm:mt-8 rounded-lg overflow-hidden">
+                <Image
+                  src={
+                    activeTab === "owners"
+                      ? "/images/Asset Owner.svg"
+                      : activeTab === "agents"
+                        ? "/images/Sales Agent.svg"
+                        : "/images/Investors.svg"
+                  }
+                  alt={
+                    activeTab === "owners"
+                      ? "Asset Owner dashboard preview"
+                      : activeTab === "agents"
+                        ? "Sales Agent mobile dashboard"
+                        : "Investor property map"
+                  }
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
               </div>
             </div>
           </motion.div>
