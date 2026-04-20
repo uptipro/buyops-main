@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "buyops-backend-production-8b2d.up.railway.app",
+        hostname: "buyops-backend-production.up.railway.app",
         pathname: "/uploads/**",
       },
     ],
