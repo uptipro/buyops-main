@@ -18,7 +18,7 @@ export default function WaitlistForm() {
     try {
       const apiUrl =
         process.env.NEXT_PUBLIC_API_URL ??
-        "https://buyops-backend-production-8b2d.up.railway.app";
+        "https://buyops-backend-production.up.railway.app";
       await fetch(`${apiUrl}/public/waitlist`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

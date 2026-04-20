@@ -213,7 +213,7 @@ export default function FractionalGallery() {
   useEffect(() => {
     const apiUrl =
       process.env.NEXT_PUBLIC_API_URL ??
-      "https://buyops-backend-production-8b2d.up.railway.app";
+      "https://buyops-backend-production.up.railway.app";
     fetch(`${apiUrl}/public/assets`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data: ApiAsset[] | null) => {
