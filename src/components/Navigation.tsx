@@ -138,16 +138,6 @@ export default function Navigation() {
               </AnimatePresence>
             </div>
             <motion.a
-              href="https://freeinvoice.buyops.ng"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="hidden sm:inline-flex px-4 py-2 sm:px-5 sm:py-2.5 bg-brand-green text-white rounded-lg hover:bg-green-700 transition-colors font-secondary font-semibold text-sm"
-            >
-              Free Invoice
-            </motion.a>
-            <motion.a
               href="#waitlist"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

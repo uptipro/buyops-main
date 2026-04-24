@@ -1,37 +1,43 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
-import dynamic from 'next/dynamic'
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 
-const GridBackground = dynamic(() => import('@/components/3D/GridBackground'), {
+const GridBackground = dynamic(() => import("@/components/3D/GridBackground"), {
   ssr: false,
-})
+});
 
-const MapMarkers3D = dynamic(() => import('@/components/3D/MapMarkers3D'), {
+const MapMarkers3D = dynamic(() => import("@/components/3D/MapMarkers3D"), {
   ssr: false,
-})
+});
 
 export default function HeroSection() {
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 })
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      setCursorPos({ x: e.clientX, y: e.clientY })
-    }
-    window.addEventListener('mousemove', handleMouseMove)
-    return () => window.removeEventListener('mousemove', handleMouseMove)
-  }, [])
+      setCursorPos({ x: e.clientX, y: e.clientY });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-16 md:pt-20">
       {/* 3D Grid Background with X, Y, Z perspective */}
-      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 1 }}>
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ zIndex: 1 }}
+      >
         <GridBackground />
       </div>
 
       {/* 3D Map Markers with true depth */}
-      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 2 }}>
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ zIndex: 2 }}
+      >
         <MapMarkers3D />
       </div>
 
@@ -39,8 +45,9 @@ export default function HeroSection() {
       <motion.div
         className="fixed w-[150px] h-[150px] rounded-full pointer-events-none hidden lg:block"
         style={{
-          background: 'radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, transparent 70%)',
-          mixBlendMode: 'difference',
+          background:
+            "radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, transparent 70%)",
+          mixBlendMode: "difference",
           left: cursorPos.x - 75,
           top: cursorPos.y - 75,
           zIndex: 4,
@@ -51,7 +58,7 @@ export default function HeroSection() {
         transition={{
           duration: 2,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
       />
 
@@ -70,16 +77,17 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-[1.05] sm:leading-[0.95] tracking-tight font-primary">
-              <span className="text-brand-dark">Real Estate Wealth,</span>
+              <span className="text-brand-dark">Invest in Verified</span>
               <br />
               <span className="bg-gradient-to-r from-brand-blue via-brand-indigo to-brand-green bg-clip-text text-transparent">
-                Unbound.
+                Nigerian Real Estate.
               </span>
             </h1>
-            
+
             {/* Subheadline */}
             <p className="text-base sm:text-lg md:text-2xl text-brand-gray leading-relaxed max-w-3xl mx-auto font-secondary">
-              The high-performance ecosystem for Nigeria’s land owners, elite agents, and visionary investors.
+              Buy verified land, earn rental returns, and build wealth through
+              Nigeria's most trusted property investment platform.
             </p>
 
             {/* Primary CTA */}
@@ -87,17 +95,25 @@ export default function HeroSection() {
               href="#waitlist"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                (window as any).gtag?.("event", "cta_click", {
+                  location: "hero",
+                });
+                (window as any).fbq?.("track", "InitiateCheckout", {
+                  content_name: "hero_cta",
+                });
+              }}
               animate={{
                 boxShadow: [
-                  '0 0 20px rgba(37, 99, 235, 0.3)',
-                  '0 0 40px rgba(37, 99, 235, 0.5)',
-                  '0 0 20px rgba(37, 99, 235, 0.3)',
+                  "0 0 20px rgba(37, 99, 235, 0.3)",
+                  "0 0 40px rgba(37, 99, 235, 0.5)",
+                  "0 0 20px rgba(37, 99, 235, 0.3)",
                 ],
                 scale: [1, 1.02, 1],
               }}
-              transition={{ 
+              transition={{
                 boxShadow: { duration: 2, repeat: Infinity },
-                scale: { duration: 2, repeat: Infinity, ease: 'easeInOut' }
+                scale: { duration: 2, repeat: Infinity, ease: "easeInOut" },
               }}
               className="inline-block px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 card-glass text-brand-blue font-bold text-base sm:text-lg rounded-xl font-secondary hover:bg-brand-blue/10 transition-colors"
             >
@@ -121,11 +137,21 @@ export default function HeroSection() {
           className="text-brand-gray text-sm font-secondary flex flex-col items-center gap-2"
         >
           <span>Scroll to explore</span>
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
           </svg>
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }

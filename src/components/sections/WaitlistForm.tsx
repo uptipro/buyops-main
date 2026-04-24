@@ -36,7 +36,16 @@ export default function WaitlistForm() {
     });
 
     setIsSubmitted(true);
-
+    if (typeof window !== "undefined") {
+      (window as any).gtag?.("event", "sign_up", {
+        method: "waitlist",
+        persona: formData.persona,
+      });
+      (window as any).fbq?.("track", "Lead", {
+        content_name: "waitlist",
+        persona: formData.persona,
+      });
+    }
     // Reset after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
