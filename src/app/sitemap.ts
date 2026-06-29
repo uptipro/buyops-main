@@ -20,5 +20,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "monthly",
             priority: 0.9,
         },
+        {
+            url: "https://buyops.ng/terms",
+            lastModified: new Date(),
+            changeFrequency: "yearly",
+            priority: 0.5,
+        },
+        {
+            url: "https://buyops.ng/privacy",
+            lastModified: new Date(),
+            changeFrequency: "yearly",
+            priority: 0.5,
+        },
+        {
+            url: "https://buyops.ng/kyc",
+            lastModified: new Date(),
+            changeFrequency: "yearly",
+            priority: 0.5,
+        },
+        {
+            url: "https://buyops.ng/commission-policy",
+            lastModified: new Date(),
+            changeFrequency: "yearly",
+            priority: 0.5,
+        },
     ];
 }

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/media/logo/Buyops Logo.svg";
 import WaitlistForm from "./WaitlistForm";
 
@@ -234,6 +235,24 @@ export default function CTAFooter() {
               </a>
             </div>
           </motion.div>
+
+          {/* Legal Links */}
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-8 text-sm">
+            {[
+              { label: "Terms & Conditions", href: "/terms" },
+              { label: "Privacy Policy", href: "/privacy" },
+              { label: "KYC Policy", href: "/kyc" },
+              { label: "Commission Policy", href: "/commission-policy" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-brand-gray hover:text-brand-blue transition-colors font-secondary"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
 
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
